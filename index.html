@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>免责声明</title>
+		<title>免责声明@ymyuuu</title>
 		<style>
 			/* 设置深色和浅色模式的颜色变量 */
 			:root {
@@ -87,6 +87,27 @@
 					font-size: auto;
 				}
 			}
+
+			.button-container {
+				text-align: center;
+				/* Center-align the buttons */
+			}
+
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #0077cc;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 16px;
+				margin-right: 10px;
+			}
+
+			.button:hover {
+				background-color: #005299;
+			}
 		</style>
 	</head>
 	<body>
@@ -130,5 +151,25 @@
 		<p>请注意，本免责声明并不排除或限制根据适用法律可能适用的任何明示或暗示的保证、条件、责任或法定权利。在适用法律允许的范围内，我将尽最大努力遵守适用法律规定的义务。</p>
 
 		<p>如果您对本免责声明有任何疑问或需要进一步的信息，请随时与我联系。</p>
+		<h2 style="text-align: center;">点击进入则表示您已阅读并同意上述免责声明</h2>
+		<!-- Center-align the buttons -->
+		<div class="button-container">
+			<!-- Back Button -->
+			<button class="button" onclick="goBack()">回退</button>
+			<!-- Enter Button -->
+			<button class="button" onclick="redirectToGitHub()">进入</button>
+		</div>
+
+		<script>
+			// Function to redirect to GitHub
+			function redirectToGitHub() {
+				window.location.href = "https://github.com/ymyuuu";
+			}
+
+			// Function to go back
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</body>
 </html>
